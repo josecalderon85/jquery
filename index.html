@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Pulque App</title>
+    <style type="text/css">
+      .jumbotron-fluid {
+          text-shadow: #444 0 1px 1px;
+          color: #FFF;
+          position: relative;
+          height: 40vh;
+          text-align: center;
+          display: flex;
+          align-items: center;
+      }
+      h1 {
+          text-align: center;
+          color: rgb(11, 21, 70);
+        }
+      button {
+          align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class="jumbotron">
+          <h1>Awesome Pulque</h1>
+          <div class="container footer">
+              <div class="d-flex justify-content-between">
+                <div class="p-2">
+                  <p>Tamales</p>
+                </div>
+                <div class="p-1">
+                  <a href="#" class="btn btn-warning" onclick="changeLook()">Re</a>
+                  <button id="btn1">#btn1</button>
+                  <button id="btn2">#btn2</button>
+                  <button id="btn3">#btn3</button>
+                  <button id="btn4">#btn4</button>
+                  <a href="#" class="btn btn-warning" onclick="changeBack()">Rs</a>
+                </div>
+                <div class="p-1">
+                  <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+          <div class="card" style="width: 16rem;">
+              <div class="card-body" id="panel1">
+                <img class="card-img-top" src="https://mxcity.mx/wp-content/uploads/2019/01/eria-del-pulque-2017-en-claveria-segundo-aniversario-03-1068x800-300x225.jpg" alt="Card image cap">
+                <h4 class="card-title">Pulque 1</h4>
+                <p class="card-text">Image of the pulque being extracted from the agave plant.</p>
+                <a href="#" class="btn btn-primary">Go to coger</a>
+              </div>
+          </div>
+          <div class="card" style="width: 16rem;">
+              <div class="card-body" id="panel2">
+                  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgLZDgcxkvCxzHu5a2ALgM8oRNr67iJkUjFVDzxkcDaNRpkNTnw" alt="Card image cap">                
+                  <h5 class="card-title">panel2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+          <div class="card" style="width: 16rem;">
+              <div class="card-body" id="panel3">
+                <img class="card-img-top" src="https://www.eleconomista.com.mx/__export/1507906117785/sites/eleconomista/img/historico/puilque1.jpg_1612941218.jpg" alt="Card image cap">
+                <h5 class="card-title">panel3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+          <div class="card" style="width: 16rem;">
+              <div class="card-body" id="panel4">
+                    <img class="card-img-top" src="https://i.pinimg.com/originals/bd/fd/b8/bdfdb8aa17dfdf09867e5d65f1ae1f27.jpg" alt="Card image cap">
+                <h5 class="card-title">panel4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#panel1").fadeOut(1000).delay(300).slideDown(1000).css({color:'blue'});
+        $("#panel2").slideUp(1000).delay(300).slideDown(1000);
+        $("#panel3").slideUp(1000).delay(300).slideDown(1000);
+        $("#panel4").slideUp(1000).delay(300).slideDown(1000);
+      });
+    </script>      
+    <!--   <div id="root"></div> -->
+  </body>
+</html>
